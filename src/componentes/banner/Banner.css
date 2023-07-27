@@ -1,0 +1,23 @@
+#main_banner #imagem_banner {
+  position: relative;
+}
+#main_banner #imagem_banner img {
+  width: 100%;
+  height: 60vh;
+}
+#main_banner #texto_banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  margin: auto;
+  text-align: center;
+}
+#main_banner #texto_banner h1, #main_banner #texto_banner p {
+  color: white;
+  padding: 10px;
+}
+#main_banner #texto_banner p {
+  text-decoration: overline;
+  font-style: italic;
+}/*# sourceMappingURL=Banner.css.map */

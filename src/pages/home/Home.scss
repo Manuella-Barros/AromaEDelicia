@@ -1,0 +1,101 @@
+#main_home{
+    #main_introducao{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+
+        h2{
+            padding: 40px;
+        }
+
+        picture{
+            position: relative;
+            display: inline;
+            
+            img{
+                width: 50%;
+                padding: 10px;
+            }
+
+            figcaption{
+                position: absolute;
+                bottom: 0px;
+                left: 10px;
+                background-color: rgb(22, 22, 22);
+                color: white;
+                width: 40%;
+                padding-inline: 2px;
+                font-size: 35px;
+                border-radius: 5%;
+            }
+        }
+
+
+        p{
+            padding: 40px;
+            font-style: italic;
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    #main_sobre{
+        margin: 20px 0;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: rgba(250, 205, 146, 0.575);
+        
+        #conteudo_sobre{
+            display: flex;
+            width: 70%;
+            margin: auto;
+            padding-block: 10px;
+
+            .sobre_item{
+                padding-inline: 20px;
+                text-align: center;
+
+                i{
+                    font-size: 70px;
+                    padding: 10px;
+                }
+
+                h2{
+                    padding: 20px;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
+        button{
+            background-color: rgba(255, 232, 201, 0);
+            border: 5px double rgb(202, 164, 113);
+            padding: 15px 25px;
+        }
+        button:hover{
+            background-color: rgb(202, 164, 113);
+            border: 5px double rgb(255, 238, 216);
+            color: rgb(255, 238, 216);
+        }
+    }
+
+    #main_restaurantes{
+        width: 60%;
+        margin: auto;
+
+        .restaurante_item{
+            display: flex;
+            padding-block: 20px;
+            
+            img{
+                width: 370px;
+            }
+            picture{
+                padding-right: 30px;
+            }
+        }
+    }
+}

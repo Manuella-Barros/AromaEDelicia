@@ -1,0 +1,40 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-inline: 150px;
+    align-items: center;
+
+    h2, #links_nav{
+        padding: 10px;
+        max-height: 100%;
+    }
+
+    h2{
+        color: white;
+    }
+
+    #links_nav{
+        a{
+            color: white;
+            justify-content: space-between;
+            font-size: 20px;
+            padding: 30px;
+        }
+        
+        a:hover{
+            background-color: rgb(202, 164, 113);
+            color: rgb(255, 238, 216);
+        }        
+    }
+}
+
+@media (max-width: 1100px){
+    #navbar{
+        padding-inline: 60px;
+
+        #links_nav a {
+            padding: 10px;
+        }
+    }
+}

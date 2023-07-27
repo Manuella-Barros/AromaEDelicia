@@ -1,0 +1,33 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-inline: 150px;
+  align-items: center;
+}
+#navbar h2, #navbar #links_nav {
+  padding: 10px;
+  max-height: 100%;
+}
+#navbar h2 {
+  color: white;
+}
+#navbar #links_nav a {
+  color: white;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 30px;
+}
+#navbar #links_nav a:hover {
+  background-color: rgb(202, 164, 113);
+  color: rgb(255, 238, 216);
+}
+
+@media (max-width: 1100px) {
+  #navbar {
+    padding-inline: 60px;
+  }
+  #navbar #links_nav a {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=NavBar.css.map */

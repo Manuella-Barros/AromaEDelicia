@@ -1,0 +1,83 @@
+#main_home #main_introducao {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#main_home #main_introducao h2 {
+  padding: 40px;
+}
+#main_home #main_introducao picture {
+  position: relative;
+  display: inline;
+}
+#main_home #main_introducao picture img {
+  width: 50%;
+  padding: 10px;
+}
+#main_home #main_introducao picture figcaption {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  width: 40%;
+  padding-inline: 2px;
+  font-size: 35px;
+  border-radius: 5%;
+}
+#main_home #main_introducao p {
+  padding: 40px;
+  font-style: italic;
+  width: 50%;
+  margin: auto;
+}
+#main_home #main_sobre {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgba(250, 205, 146, 0.575);
+}
+#main_home #main_sobre #conteudo_sobre {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding-block: 10px;
+}
+#main_home #main_sobre #conteudo_sobre .sobre_item {
+  padding-inline: 20px;
+  text-align: center;
+}
+#main_home #main_sobre #conteudo_sobre .sobre_item i {
+  font-size: 70px;
+  padding: 10px;
+}
+#main_home #main_sobre #conteudo_sobre .sobre_item h2 {
+  padding: 20px;
+}
+#main_home #main_sobre #conteudo_sobre .sobre_item p {
+  text-align: center;
+}
+#main_home #main_sobre button {
+  background-color: rgba(255, 232, 201, 0);
+  border: 5px double rgb(202, 164, 113);
+  padding: 15px 25px;
+}
+#main_home #main_sobre button:hover {
+  background-color: rgb(202, 164, 113);
+  border: 5px double rgb(255, 238, 216);
+  color: rgb(255, 238, 216);
+}
+#main_home #main_restaurantes {
+  width: 60%;
+  margin: auto;
+}
+#main_home #main_restaurantes .restaurante_item {
+  display: flex;
+  padding-block: 20px;
+}
+#main_home #main_restaurantes .restaurante_item img {
+  width: 370px;
+}
+#main_home #main_restaurantes .restaurante_item picture {
+  padding-right: 30px;
+}/*# sourceMappingURL=Home.css.map */

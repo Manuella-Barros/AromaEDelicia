@@ -1,0 +1,18 @@
+#main_footer {
+  display: flex;
+  background-color: rgba(250, 205, 146, 0.575);
+  justify-content: space-between;
+  padding: 15px 60px 5px 60px;
+}
+#main_footer p {
+  color: rgb(202, 164, 113);
+}
+#main_footer h1 {
+  color: rgb(255, 238, 216);
+}
+
+@media (max-width: 1100px) {
+  #main_footer {
+    padding: 15px 20px 5px 20px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
