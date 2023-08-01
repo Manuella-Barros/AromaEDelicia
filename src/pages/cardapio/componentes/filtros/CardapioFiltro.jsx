@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Filtros from './Filtros';
+import { GlobalContext } from '../../../../context/GlobalContext';
 
 const filtros = {
     'cafes': [<Filtros.tempo />, <Filtros.sabor />],
@@ -10,6 +11,11 @@ const filtros = {
 
 function CardapioFiltro() {
     const params = useParams();
+    const[filtrar, setFiltrar] = useContext(GlobalContext);
+
+    useEffect(() => {
+        setFiltrar({});
+    }, [params])
     
     return (
         <section className='main_filtro'>

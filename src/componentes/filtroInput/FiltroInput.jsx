@@ -1,14 +1,21 @@
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 
-function FiltroInput({filtro}) {
+function FiltroInput({filtros, chaves}) {
     const [filtrar, setFiltrar] = useContext(GlobalContext);
+
+    function acaoBotao(){
+        setFiltrar({
+            filtros: filtros,
+            chaves: chaves,
+        });
+    }
 
     return (
         <div className="input">
-            <p>{filtro}</p>
-            <input onClick={() => setFiltrar({ filtro })} type="radio" name="input" id=""/>
-            {console.log(filtrar)}
+            <p>{filtros}</p>
+            <input onClick={acaoBotao} type="radio" name="input" id="" />
+
             {/* DESCLICAR */}
             {/* <input onClick={acaoBotao} checked={checked} type="radio" name="input" id="" /> */}
             {/* ICONE */}

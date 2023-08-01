@@ -6,8 +6,8 @@ function FiltroPreco() {
         <div>
             <h3>Preço</h3>
             <div className="filtro_inputs">
-                <FiltroInput filtro={'R$1,00 - R$20,00'}/>
-                <FiltroInput filtro={'Maior do que R$20,00'}/>
+                <FiltroInput filtros={'Até R$20,00'} chaves={'preco'}/>
+                <FiltroInput filtros={'Maior do que R$20,00'} chaves={'preco'}/>
             </div>
         </div>
     );

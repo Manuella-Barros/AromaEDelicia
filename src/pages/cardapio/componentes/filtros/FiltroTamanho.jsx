@@ -6,9 +6,9 @@ function FiltroTamanho() {
         <div>
             <h3>Tamanho</h3>
             <div className="filtro_inputs">
-                <FiltroInput filtro={"grande"} />
-                <FiltroInput filtro={"medio"} />
-                <FiltroInput filtro={"pequeno"} />
+                <FiltroInput filtros={"grande"} chaves={'tamanho'}/>
+                <FiltroInput filtros={"medio"} chaves={'tamanho'}/>
+                <FiltroInput filtros={"pequeno"} chaves={'tamanho'}/>
             </div>
         </div>
     );

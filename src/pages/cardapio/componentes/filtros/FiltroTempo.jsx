@@ -6,8 +6,8 @@ function FiltroTempo() {
         <div>
             <h3>Tempo</h3>
             <div className="filtro_inputs">
-                <FiltroInput filtro={"rapido"} />
-                <FiltroInput filtro={"demorado"} />
+                <FiltroInput filtros={"rapido"} chaves={'tempoPreparo'}/>
+                <FiltroInput filtros={"demorado"} chaves={'tempoPreparo'}/>
             </div>
         </div>
     );

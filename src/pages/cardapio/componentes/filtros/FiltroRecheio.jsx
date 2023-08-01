@@ -6,10 +6,10 @@ function FiltroRecheio() {
         <div>
             <h3>Recheio</h3>
             <div className="filtro_inputs">
-                <FiltroInput filtro={"maracuja"}/>
-                <FiltroInput filtro={"morango"} />
-                <FiltroInput filtro={"chocolate"} />
-                <FiltroInput filtro={"baunilha"} />
+                <FiltroInput filtros={"maracuja"} chaves={'recheio'}/>
+                <FiltroInput filtros={"morango"} chaves={'recheio'}/>
+                <FiltroInput filtros={"chocolate"} chaves={'recheio'}/>
+                <FiltroInput filtros={"baunilha"} chaves={'recheio'}/>
             </div>
         </div>
     );
