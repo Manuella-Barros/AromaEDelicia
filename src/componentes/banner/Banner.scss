@@ -1,3 +1,5 @@
+@use '../../globalStyles/variables/variables.scss' as *;
+
 #main_banner{
     #imagem_banner{
         position: relative;
@@ -17,12 +19,43 @@
         text-align: center;
         
         h1, p{
-            color: white;
+            color: $neutral-color-1;
             padding: 10px;
         }
         p{
             text-decoration: overline;
             font-style: italic;
         }
+        @media (max-width: 1153px){
+            h1{
+                font-size: $escala-xgg;
+            }
+        }
+        @media (max-width: 1000px){
+            top: 55%;
+        }
     }
 }
+
+@media (max-width: 400px) {
+    #main_banner {
+        #imagem_banner {
+            img{
+                height: 40vh
+            }
+        }
+
+        #texto_banner{
+            top: 35%
+        }
+        #texto_banner h1{
+            font-size: $escala-gg;
+            padding: 0;
+        }
+        #texto_banner p{
+            font-size: $escala-m;
+            padding: 0;
+        }       
+    }    
+}
+

@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Crimson Text", serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Courgette", cursive;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Courgette", cursive;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Crimson Text", serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  :root {
+    font-size: 0.875rem;
+  }
+}/*# sourceMappingURL=reset.css.map */

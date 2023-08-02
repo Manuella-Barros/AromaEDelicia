@@ -1,6 +1,5 @@
-import { useState } from "react";
+import './globalStyles/reset/reset.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import NavBar from "./componentes/navbar/NavBar";
 import Home from "./pages/home/Home";
 import Footer from "./componentes/footer/Footer";

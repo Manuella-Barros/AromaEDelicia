@@ -5,10 +5,14 @@ function FiltroInput({filtros, chaves}) {
     const [filtrar, setFiltrar] = useContext(GlobalContext);
 
     function acaoBotao(){
-        setFiltrar({
-            filtros: filtros,
-            chaves: chaves,
-        });
+        if(filtrar['filtros'] == filtros){
+            setFiltrar({})
+        } else{
+            setFiltrar({
+                filtros: filtros,
+                chaves: chaves,
+            });
+        }
     }
 
     return (

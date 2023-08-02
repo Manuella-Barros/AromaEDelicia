@@ -14,10 +14,37 @@
   text-align: center;
 }
 #main_banner #texto_banner h1, #main_banner #texto_banner p {
-  color: white;
+  color: #F2F2F2;
   padding: 10px;
 }
 #main_banner #texto_banner p {
   text-decoration: overline;
   font-style: italic;
+}
+@media (max-width: 1153px) {
+  #main_banner #texto_banner h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  #main_banner #texto_banner {
+    top: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  #main_banner #imagem_banner img {
+    height: 40vh;
+  }
+  #main_banner #texto_banner {
+    top: 35%;
+  }
+  #main_banner #texto_banner h1 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  #main_banner #texto_banner p {
+    font-size: 1.25rem;
+    padding: 0;
+  }
 }/*# sourceMappingURL=Banner.css.map */

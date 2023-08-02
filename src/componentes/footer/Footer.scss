@@ -1,14 +1,17 @@
+@use '../../globalStyles/variables/variables.scss' as *;
+
 #main_footer{
     display: flex;
-    background-color: rgba(250, 205, 146, 0.575);
+    background-color: $primary-color-3;
     justify-content: space-between;
-    padding: 15px 60px 5px 60px;
+    padding-block: $escala-m;
+    padding-inline: $escala-xx-gg;
     
     p{
-        color: rgb(202, 164, 113);
+        color: $primary-color-2;
     }
     h1{
-        color: rgb(255, 238, 216);
+        color: $primary-color-1;
     }
 }
 

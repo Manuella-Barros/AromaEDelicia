@@ -25,11 +25,19 @@
                 color: white;
                 width: 40%;
                 padding-inline: 2px;
-                font-size: 35px;
+                font-size: $escala-m;
                 border-radius: 5%;
             }
-        }
 
+            @media (max-width: 600px) {
+                display: block;
+
+                img {
+                    width: 80%;
+                    padding: 10px;
+                }
+            }
+        }
 
         p{
             padding: 40px;
@@ -40,28 +48,28 @@
     }
 
     #main_sobre{
-        margin: 20px 0;
-        padding-bottom: 30px;
+        margin: $escala-m 0;
+        padding-bottom: $escala-gg;
         text-align: center;
-        background-color: rgba(250, 205, 146, 0.575);
+        background-color: $primary-color-3;
         
         #conteudo_sobre{
             display: flex;
             width: 70%;
             margin: auto;
-            padding-block: 10px;
+            padding-block: $escala-xxpp;
 
             .sobre_item{
-                padding-inline: 20px;
+                padding-inline: $escala-m;
                 text-align: center;
 
                 i{
-                    font-size: 70px;
-                    padding: 10px;
+                    font-size: $escala-plus;
+                    padding: $escala-xxpp;
                 }
 
                 h2{
-                    padding: 20px;
+                    padding: $escala-m;
                 }
 
                 p{
@@ -72,11 +80,12 @@
 
         button{
             background-color: rgba(255, 232, 201, 0);
-            border: 5px double rgb(202, 164, 113);
-            padding: 15px 25px;
+            border: 5px double $primary-color-2;
+            padding: $escala-p $escala-m;
+            margin-top: $escala-m;
         }
         button:hover{
-            background-color: rgb(202, 164, 113);
+            background-color: $primary-color-2;
             border: 5px double rgb(255, 238, 216);
             color: rgb(255, 238, 216);
         }
@@ -88,14 +97,25 @@
 
         .restaurante_item{
             display: flex;
-            padding-block: 20px;
+            padding-block: $escala-m;
             
             img{
                 width: 370px;
             }
             picture{
-                padding-right: 30px;
+                padding-right: $escala-gg;
             }
         }
     }
+}
+
+@media (max-width: 400px) {
+    #main_home {
+        #main_introducao {
+            p{
+                width: 100%;
+                padding: 5px;
+            }
+        }
+    }        
 }

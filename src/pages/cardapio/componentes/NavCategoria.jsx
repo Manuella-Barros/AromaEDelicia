@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavCategoria() {
     return (
-      <nav id="nav_categoria">
-        <Link to={'cafes'}>Cafes</Link>
-        <Link to={'donuts'}>Donuts</Link>
-        <Link to={'cupcakes'}>Cupcakes</Link>
-      </nav>
+        <nav id="nav_categoria">
+            <NavLink to={"cafes"}>Cafes</NavLink>
+            <NavLink to={"donuts"}>Donuts</NavLink>
+            <NavLink to={"cupcakes"}>Cupcakes</NavLink>
+        </nav>
     );
 }
 

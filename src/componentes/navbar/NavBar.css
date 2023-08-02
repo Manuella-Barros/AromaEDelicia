@@ -1,33 +1,57 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  padding-inline: 150px;
+  background-color: #0D0D0D;
+  padding-inline: 8rem;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  #navbar {
+    padding-inline: 0.75rem;
+  }
+}
 #navbar h2, #navbar #links_nav {
-  padding: 10px;
+  padding: 0.75rem;
   max-height: 100%;
 }
+@media (max-width: 870px) {
+  #navbar h2, #navbar #links_nav {
+    padding: 0.625rem;
+  }
+}
 #navbar h2 {
-  color: white;
+  color: rgb(255, 238, 216);
 }
 #navbar #links_nav a {
-  color: white;
+  color: rgb(255, 238, 216);
   justify-content: space-between;
-  font-size: 20px;
-  padding: 30px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+@media (max-width: 870px) {
+  #navbar #links_nav a {
+    padding-inline: 1.25rem;
+    padding-block: 0.75rem;
+  }
 }
 #navbar #links_nav a:hover {
   background-color: rgb(202, 164, 113);
-  color: rgb(255, 238, 216);
+  color: #F2F2F2;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 400px) {
   #navbar {
-    padding-inline: 60px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+  }
+  #navbar h2 {
+    padding: 2px;
+  }
+  #navbar #links_nav {
+    padding: 2px;
   }
   #navbar #links_nav a {
-    padding: 10px;
+    padding-inline: 10px;
   }
 }/*# sourceMappingURL=NavBar.css.map */

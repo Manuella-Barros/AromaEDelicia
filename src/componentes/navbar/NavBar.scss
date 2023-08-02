@@ -1,40 +1,74 @@
+@use '../../globalStyles/variables/variables.scss' as *;
+
 #navbar{
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    padding-inline: 150px;
+    background-color: $neutral-color-7;
+    padding-inline: $escala-xplus;
     align-items: center;
 
+    @media (max-width: 1100px){
+        padding-inline: $escala-xpp;
+    }
+    // @media (max-width: 400px) {
+    //     display: block;
+    //     text-align: center;
+
+    //     a {
+    //         font-size: 10px;
+    //         padding-inline: 0.2px;
+    //         padding-block: 0.2px;
+    //     }
+    // }
+    
     h2, #links_nav{
-        padding: 10px;
+        padding: $escala-xpp;
         max-height: 100%;
+
+        @media (max-width: 870px) {
+            padding: $escala-xxpp;
+        }
     }
 
     h2{
-        color: white;
+        color: $primary-color-1;
     }
 
     #links_nav{
         a{
-            color: white;
+            color: $primary-color-1;
             justify-content: space-between;
-            font-size: 20px;
-            padding: 30px;
+            padding-inline: $escala-gg;
+            padding-block: $escala-p;
+
+            @media (max-width: 870px) {
+                padding-inline: $escala-m;
+                padding-block: $escala-xpp;
+            }
         }
         
         a:hover{
-            background-color: rgb(202, 164, 113);
-            color: rgb(255, 238, 216);
+            background-color: $primary-color-2;
+            color: $neutral-color-1;
         }        
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 400px) {
     #navbar{
-        padding-inline: 60px;
+        padding: 0px;
+        display: block;
+        text-align: center;
 
-        #links_nav a {
-            padding: 10px;
+        h2{
+            padding: 2px;
+        }
+        #links_nav {
+            padding: 2px;
+
+            a{
+                padding-inline: 10px;
+            }
         }
     }
 }

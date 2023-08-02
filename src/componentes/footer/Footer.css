@@ -2,7 +2,8 @@
   display: flex;
   background-color: rgba(250, 205, 146, 0.575);
   justify-content: space-between;
-  padding: 15px 60px 5px 60px;
+  padding-block: 1.25rem;
+  padding-inline: 4rem;
 }
 #main_footer p {
   color: rgb(202, 164, 113);
