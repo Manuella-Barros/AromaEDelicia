@@ -39,7 +39,7 @@
   color: #F2F2F2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   #navbar {
     padding: 0px;
     display: block;
@@ -53,5 +53,6 @@
   }
   #navbar #links_nav a {
     padding-inline: 10px;
+    padding-block: 2px;
   }
 }/*# sourceMappingURL=NavBar.css.map */

@@ -22,7 +22,7 @@
   color: white;
   width: 40%;
   padding-inline: 2px;
-  font-size: 35px;
+  font-size: 1.25rem;
   border-radius: 5%;
 }
 @media (max-width: 600px) {
@@ -41,8 +41,8 @@
   margin: auto;
 }
 #main_home #main_sobre {
-  margin: 20px 0;
-  padding-bottom: 30px;
+  margin: 1.25rem 0;
+  padding-bottom: 2rem;
   text-align: center;
   background-color: rgba(250, 205, 146, 0.575);
 }
@@ -50,18 +50,18 @@
   display: flex;
   width: 70%;
   margin: auto;
-  padding-block: 10px;
+  padding-block: 0.625rem;
 }
 #main_home #main_sobre #conteudo_sobre .sobre_item {
-  padding-inline: 20px;
+  padding-inline: 1.25rem;
   text-align: center;
 }
 #main_home #main_sobre #conteudo_sobre .sobre_item i {
-  font-size: 70px;
-  padding: 10px;
+  font-size: 4.5rem;
+  padding: 0.625rem;
 }
 #main_home #main_sobre #conteudo_sobre .sobre_item h2 {
-  padding: 20px;
+  padding: 1.25rem;
 }
 #main_home #main_sobre #conteudo_sobre .sobre_item p {
   text-align: center;
@@ -69,8 +69,8 @@
 #main_home #main_sobre button {
   background-color: rgba(255, 232, 201, 0);
   border: 5px double rgb(202, 164, 113);
-  padding: 15px 25px;
-  margin-top: 20px;
+  padding: 1rem 1.25rem;
+  margin-top: 1.25rem;
 }
 #main_home #main_sobre button:hover {
   background-color: rgb(202, 164, 113);
@@ -83,11 +83,34 @@
 }
 #main_home #main_restaurantes .restaurante_item {
   display: flex;
-  padding-block: 20px;
+  padding-block: 1.25rem;
 }
 #main_home #main_restaurantes .restaurante_item img {
   width: 370px;
 }
 #main_home #main_restaurantes .restaurante_item picture {
-  padding-right: 30px;
+  padding-right: 2rem;
+}
+
+@media (max-width: 430px) {
+  #main_home #main_introducao p {
+    padding: 1.25rem;
+    width: 100%;
+  }
+  #main_home #main_sobre #conteudo_sobre {
+    display: block;
+  }
+  #main_home #main_restaurantes {
+    width: 60%;
+  }
+  #main_home #main_restaurantes .restaurante_item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #main_home #main_restaurantes .restaurante_item img {
+    width: 16rem;
+  }
+  #main_home #main_restaurantes .restaurante_item picture {
+    padding-top: 2rem;
+  }
 }/*# sourceMappingURL=Home.css.map */

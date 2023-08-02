@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding-block: 1.25rem;
   box-shadow: 0px 1px 4px rgba(250, 205, 146, 0.575);
-  width: 34.2%;
+  width: 36.5%;
   margin: auto;
 }
 #main_cardapio #nav_categoria a {
@@ -42,7 +42,7 @@
   text-align: center;
   padding-inline: 2rem;
 }
-#main_cardapio #container_cardapio .main_filtro h1 {
+#main_cardapio #container_cardapio .main_filtro p {
   justify-content: start;
 }
 #main_cardapio #container_cardapio .main_filtro h3 {
@@ -59,6 +59,20 @@
 #main_cardapio #container_cardapio .main_filtro .filtro_inputs .input i {
   color: rgb(155, 155, 155);
 }
+#main_cardapio #container_cardapio .main_filtro .filtro_inputs .input:hover {
+  color: rgb(202, 164, 113);
+}
+#main_cardapio #container_cardapio .main_filtro .filtro_inputs input[type=radio] {
+  -webkit-appearance: none;
+  border: 4px double rgb(202, 164, 113);
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+}
+#main_cardapio #container_cardapio .main_filtro .filtro_inputs input[type=radio]:checked {
+  background-color: rgba(250, 205, 146, 0.575);
+  border: 1px solid;
+}
 #main_cardapio #container_cardapio .main_produtos {
   width: 68%;
 }
@@ -74,12 +88,14 @@
 }
 #main_cardapio #container_cardapio .main_produtos .produtos .produto {
   position: relative;
+  overflow: hidden;
 }
 #main_cardapio #container_cardapio .main_produtos .produtos .produto img {
   width: 300px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
 }
 @media (max-width: 1030px) {
   #main_cardapio #container_cardapio .main_produtos .produtos .produto img {
@@ -92,6 +108,10 @@
     width: 350px;
     height: 230px;
   }
+}
+#main_cardapio #container_cardapio .main_produtos .produtos .produto img:hover {
+  overflow: hidden;
+  transform: scale(1.1);
 }
 #main_cardapio #container_cardapio .main_produtos .produtos .produto figcaption {
   position: absolute;
@@ -111,7 +131,7 @@
   color: rgb(202, 164, 113);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   #main_cardapio #nav_categoria {
     width: 70%;
   }

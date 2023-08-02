@@ -16,4 +16,12 @@
   #main_footer {
     padding: 15px 20px 5px 20px;
   }
+}
+@media (max-width: 430px) {
+  #main_footer {
+    gap: 2rem;
+  }
+  #main_footer h1 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */

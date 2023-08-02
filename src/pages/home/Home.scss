@@ -1,3 +1,5 @@
+@use '../../globalStyles//variables/variables.scss' as *;
+
 #main_home{
     #main_introducao{
         width: 70%;
@@ -109,13 +111,35 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) { 
     #main_home {
         #main_introducao {
-            p{
+            p {
+                padding: $escala-m;
                 width: 100%;
-                padding: 5px;
             }
         }
-    }        
+
+        #main_sobre {
+            #conteudo_sobre {
+                display: block;
+            }
+        }
+
+        #main_restaurantes{
+            width: 60%;
+            .restaurante_item {
+                display: flex;
+                flex-direction: column-reverse;
+        
+                img {
+                    width: $escala-xx-plus;
+                }
+        
+                picture {
+                    padding-top: $escala-gg;
+                }
+            }
+        }
+    }
 }
